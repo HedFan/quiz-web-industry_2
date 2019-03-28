@@ -1,0 +1,125 @@
+node_modules/
+bower_components/
+.idea/
+images_prebuild/
+import_prebuild/
+import/
+images/
+develop/
+
+# Created by https://www.gitignore.io/api/font,bitrix,images
+
+### Bitrix ###
+# Bitrix .gitignore (core version 14+)
+
+#Exclude all of core files
+/.htaccess
+/bitrix/*
+
+#But not the templates and non bitrix components
+!/bitrix/templates
+!/bitrix/components
+/bitrix/components/bitrix
+
+#Exclude bitrix gadgets
+!/bitrix/gadgets
+/bitrix/gadgets/bitrix
+
+#User can use that directory to store some stuff, but it's not really recommended, just use /local instead of this
+!/bitrix/php_interface/
+/local/php_interface/constants.php
+
+#Exclude database configs
+/bitrix/php_interface/dbconn.php
+
+#Exclude default file storage directory
+/upload/
+
+# Misc unused files
+/*.txt
+~*.php
+*.log
+*.xml
+
+### Font ###
+*.fnt
+*.fon
+*.otf
+*.ttf
+
+### Images ###
+# JPEG
+*.jpg
+*.jpeg
+*.jpe
+*.jif
+*.jfif
+*.jfi
+
+# JPEG 2000
+*.jp2
+*.j2k
+*.jpf
+*.jpx
+*.jpm
+*.mj2
+
+# JPEG XR
+*.jxr
+*.hdp
+*.wdp
+
+# Graphics Interchange Format
+*.gif
+
+# RAW
+*.raw
+
+# Web P
+*.webp
+
+# Portable Network Graphics
+*.png
+
+# Animated Portable Network Graphics
+*.apng
+
+# Multiple-image Network Graphics
+*.mng
+
+# Tagged Image File Format
+*.tiff
+*.tif
+
+# Scalable Vector Graphics
+*.svg
+*.svgz
+
+# Portable Document Format
+*.pdf
+
+# X BitMap
+*.xbm
+
+# BMP
+*.bmp
+*.dib
+
+# ICO
+*.ico
+
+# 3D Images
+*.3dm
+*.max
+
+### Font ###
+*.fnt
+*.fon
+*.otf
+*.ttf
+*.woff
+*.woff2
+*.eot
+
+
+# End of https://www.gitignore.io/api/font,bitrix,images
