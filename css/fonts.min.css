@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Fixedsys';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fixedsys Excelsior 3.01'),url("/css/fonts/fixedsys/FSEX300.woff") format('woff');
+}

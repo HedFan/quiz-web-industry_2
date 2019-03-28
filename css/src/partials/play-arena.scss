@@ -1,0 +1,106 @@
+.play-arena {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @include respond-to(md) {
+    flex-direction: row;
+  }
+
+
+  &__arena {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .card-item {
+    margin: 20px auto;
+    height: 200px;
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform .2s ease;
+    @include respond-to(md) {
+      margin: 20px;
+    }
+
+    &--collapsed {
+      position: relative;
+      &:first-child {
+        transform: translateY(120px);
+        @include respond-to(md) {
+          transform: translateX(170px);
+        }
+      }
+      &:nth-child(2) {
+        transform: translateY(-120px);
+        @include respond-to(md) {
+          transform: translateX(-170px);
+        }
+      }
+    }
+  }
+
+
+  &__res-img {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    max-width: 184px;
+
+    position: absolute;
+    bottom: -10px;
+    right: 40px;
+    z-index: 5;
+    img {
+      width: 64px;
+      height: 64px;
+    }
+    p {
+      margin: 0;
+      text-align: left;
+      font-family: 'Fixedsys';
+    }
+  }
+
+  &__dscr {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Fixedsys';
+  }
+
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    &.hide{
+      display: none;
+    }
+    button {
+      margin: 20px 10px;
+      background-color: #62468A;
+      color: $white;
+      padding: 8px 27px;
+      cursor: pointer;
+      font-size: 24px;
+      border-radius: 11px;
+      border: none;
+      font-family: 'Fixedsys';
+      &:focus {
+        outline: none;
+      }
+
+      @include respond-to(sm) {
+        margin: 20px;
+        font-size: 34px;
+      }
+    }
+
+  }
+
+}
